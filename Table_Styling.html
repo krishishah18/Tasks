@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table_CSS</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+       
+        #background
+        {
+            background: linear-gradient(rgb(111, 111, 241), lightblue, white);
+            width: 100%;
+            height: 650px;
+            margin: 0%;
+            padding: 0%;
+            outline: 10px solid pink;
+        }
+
+        .title
+        {
+            width: 100%;
+            height: 50px;
+            padding-top: 1px;
+        }
+
+        p
+        {
+            font-size: 50px;
+            font-weight: bolder;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(77, 33, 121);
+            background-color: rgb(255, 242, 244);   
+            text-align: center; 
+            letter-spacing: 5px;
+            word-spacing: 10px; 
+            border: 2px solid;       
+        }
+
+        .table
+        {
+            width: 800px;
+            padding-left: 270px;
+            padding-top: 150px;
+        }
+
+        table
+        {
+            width: 800px;
+            height: 400px;
+            background: radial-gradient(rgb(233, 95, 123), pink, white );
+        }
+
+        table, th, td
+        {
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+        }
+
+        th
+        {
+            color: rgb(77, 33, 121);
+            font-style: italic;
+            font-size: 22px;
+            text-decoration: underline;
+        }
+
+        td
+        {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        tr.color1
+        {
+            color: maroon;
+        }
+
+        tr.color2 
+        {
+            color: midnightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div class="title">
+             <p>Employee Table</p>
+        </div>
+
+        <div class="table">
+        <table>
+            <tr>
+                <th>Sr.No.</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Department</th>
+                <th>Contact</th>
+                <th>Salary</th>
+                <th>Tasks Submitted</th>
+            </tr>
+
+            
+                <tr class="color1">
+                    <td>1.</td>
+                    <td>Krishi</td>
+                    <td>Shah</td>
+                    <td>Designing</td>
+                    <td>87807*****</td>
+                    <td>20,000/-</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr class="color2">
+                    <td>2.</td>
+                    <td>Dhruv</td>
+                    <td>Shah</td>
+                    <td>Marketing</td>
+                    <td>89804*****</td>
+                    <td>25,000/-</td>
+                    <td>4</td>
+                </tr>
+            
+                <tr class="color1">
+                    <td>3.</td>
+                    <td>Parita</td>
+                    <td>Kanetiya</td>
+                    <td>Front Desk</td>
+                    <td>84691****</td>
+                    <td>18,000/-</td>
+                    <td>2</td>
+                </tr>
+
+                <tr class="color2">
+                    <td>4.</td>
+                    <td>Samay</td>
+                    <td>Mehta</td>
+                    <td>Intern</td>
+                    <td>98999****</td>
+                    <td>8,000/-</td>
+                    <td>5</td>
+                </tr>
+
+                <tr class="color1">
+                    <td>5.</td>
+                    <td>Siddh</td>
+                    <td>Chhajed</td>
+                    <td>Intern</td>
+                    <td>65789****</td>
+                    <td>8,000/-</td>
+                    <td>4</td>
+                </tr>
+
+                <tr class="color2">
+                    <td>6.</td>
+                    <td>Jigna</td>
+                    <td>Sanghvi</td>
+                    <td>HR</td>
+                    <td>97266****</td>
+                    <td>25,000/-</td>
+                    <td>2</td>
+                </tr>
+        </table>
+        </div>
+      
+    </div>
+</body>
+</html>

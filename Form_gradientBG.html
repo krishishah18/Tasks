@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        #main
+        {
+            width: 100%;
+        }
+        .background
+        {
+            width: 100%;
+            height: 640px;
+            background: linear-gradient(aqua, pink, purple);
+            padding-top: 100px;
+        }
+        .one
+        {
+            width: 420px;
+            height: 405px;
+            background-color:lavender; 
+            float: left;
+        }
+        .left
+        {
+            padding: 10px;
+            margin-left: 300px;
+            border-right: 1px solid;
+        }
+        .right
+        {
+          padding: 10px; 
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        h1
+        {
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="background">
+            <div class="left one">
+                <img src="images/CookingClass.jpg" alt="cooking class" width="400px">                            
+            </div>
+
+            <div class="right one"> 
+                <h1>Cooking Class</h1>
+                <form action="" method="post" name="registration" enctype="multipart/form-data">
+                    <table border="1" align="center">
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="email" name="E-mail"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Contact</td>
+                            <td><input type="tel" name="contact"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" name="gender" value="female">Female
+                            <input type="radio" name="gender" value="male">Male</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dishes</td>
+                            <td>
+                                <input type="checkbox" name="dishes" value="Pasta">Pasta
+                                <input type="checkbox" name="dishes" value="Cakes">Cakes
+                                <input type="checkbox" name="dishes" value="Bread Making">Bread Making
+                                <input type="checkbox" name="dishes" value="Dal Bati">Dal Bati
+                                <input type="checkbox" name="dishes" value="Pizza">Pizza
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Location</td>
+                            <td>
+                                <select name="location">
+                                    <option value="Navrangpura">Navrangpura</option>
+                                    <option value="Bodakdev">Bodakdev</option>
+                                    <option value="Thaltej">Thaltej</option>
+                                    <option value="Sabarmati">Sabarmati</option>
+                                    <option value="Shahibaug">Shahibaug</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Register</td>
+                            <td align="center" colspan="2"><input type="submit" name="register"></td>
+                        </tr>
+                    </table>
+                </form>           
+            </div>
+        </div>
+    </div>
+</body>
+</html>

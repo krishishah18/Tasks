@@ -50,24 +50,28 @@
         .body
         {
             width: 100%;
-            height: 5200px;
+            height: 1500px;
             float: left;
             background-color: grey;
         }
+       
         .top
         {
-            height: 50px;
+            position: sticky;
             width: 100%;
-            background-color: rgba(86, 86, 91, 0.965);
-            /*border: 1px solid;*/
         }
+        
         ul
         {
+ 
             height: 50px;
             background-color: rgba(86, 86, 91, 0.965);
-            margin-left: 670px;
+            /* margin-left: 670px; */
+            margin-bottom: 0%;
             margin-top: 0px;
             padding: 0%;
+            display: flex;
+            justify-content: flex-end;
         }
         li
         {
@@ -75,7 +79,7 @@
             display: inline-block;
             padding-left: 20px;
             padding-top: 10px;
-            padding-right: 20px;           
+            padding-right: 20px;
         }
         a
         {
@@ -92,26 +96,61 @@
         li:hover a
         {
             color: black;
+            display: inline-block;
         }
-      
+
+       .length
+        {
+            margin-left: 190px;
+            margin-top: 20px; 
+            margin-bottom: 20px;      
+        }
+
         .product
         {
             float: left;
-            padding-left: 55px;
-            padding-top: 40px;
+            padding-left: 130px;
+            padding-top: 10px;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+            /* padding-right: 50px; */
+            
+        }
+
+        .footer
+        {
+            width: 100%;
+            height: 70px;
+            background-color: lavender;
+            float: left;
+            padding-top: 10px;
+            font-weight: bold;
         }
         
+        .product h2
+        {
+            text-align: center;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+        }
+
+        .product button
+        {
+            padding-top: 0%;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
         
     </style>
 </head>
 <body>
     <div id="main">
-    <!-- <div class="background"> -->
 
         <!-- header open -->
         <div class="header">
             <div class="left">
-                <img src="bhagwaticlasses.jpg" alt="bhagwaticookingclasses">
+                <img src="images/bhagwaticlasses.jpg" alt="bhagwaticookingclasses">
             </div>
 
             <div class="right">
@@ -134,24 +173,73 @@
             </div>
             <!-- top end -->
 
-            <!-- product start -->
+           
             <div class="center">
+                <!-- big photo start -->
+                <div class="length">
+                <img src="images/cooking.jpg" alt="cooking" width="80%" height="400">
+                </div>
+                <!-- big photo end -->
+
+                 <!-- product start -->
                  <div class="product">
-                    <img src="cooking.jpg" alt="cook" height="250px">
+                    <img src="images/pasta.jpg" alt="pasta" height="250px" width="170px">
+                    <h2>Pasta</h2> 
+                    <center><button>Add to cart</button></center>
+                </div>
+
+                 <div class="product">
+                    <img src="images/cake.jpg" alt="cake" height="250px" width="170px">
+                    <h2>Cake</h2>
+                    <center><button>Add to cart</button></center>
                  </div>
 
                  <div class="product">
-                    <img src="backing.jpg" alt="bake" height="250px">
+                    <img src="images/bread.jpg" alt="bread" height="250px" width="170px">
+                    <h2>Breads</h2>
+                    <center><button>Add to cart</button></center>
                  </div>
-
+                 
                  <div class="product">
-                    <img src="spices.jpg" alt="spices" height="250px">
+                    <img src="images/dal batti.jpg" alt="dalbatti" height="250px" width="170px">
+                    <h2>Dal Batti</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/waffle.jpg" alt="waffle" height="250px" width="170px">
+                    <h2>Waffle</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/pizza.jpg" alt="pizza" height="250px" width="170px">
+                    <h2>Pizza</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/icecream.jpg" alt="icecream" height="250px" width="170px">
+                    <h2>Ice-cream</h2>
+                    <center><button>Add to cart</button></center>
+                 </div>
+                 
+                 <div class="product">
+                    <img src="images/noodles.jpg" alt="noodles" height="250px" width="170px">
+                    <h2>Noodles</h2>
+                    <center><button>Add to cart</button></center>
                  </div>
             </div>
             <!-- product end -->
         </div>
         <!-- body close -->
-    <!-- </div> -->
+
+        <!-- footer open -->
+        <div class="footer">
+            <center><h3>Bhagwati Cooking Classes by Krishi Shah</h3></center>
+        </div>
+        <!-- footer end -->
+
     </div>
 </body>
 </html>
