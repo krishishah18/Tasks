@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyLogin</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .background
+        {
+            /* background-image: url(images/spotifyBG4.png); */
+            background-color: black;
+            width: 100%;
+            height: 640px;
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 110px; */
+            position: relative;
+        }
+        .name p
+        {
+            font-size: 200px;
+            color: rgb(27, 164, 27);
+            margin-left: 500px;
+            position: absolute;
+            top: 50px;
+        }
+        .login
+        {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(177, 236, 177);
+            border: 1px dotted;
+            padding-top: 40px;
+            padding-left: 20px;
+            position: absolute;
+            top: 150px;
+            left: 180px;
+        }
+        .login h1
+        {
+            padding-right: 25px; 
+
+        }
+        .login h3
+        {
+            margin-bottom: 4%;
+        }
+        .login a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            padding-right: 25px; 
+        }
+        .img img 
+        {
+            position: absolute;
+            /* border: 2px solid; */
+            width: 120px;
+            height: 120px;
+            top: 90px;
+            left: 270px;
+        }
+
+        .login input[type="email"], input[type="Password"]
+        {
+            border: none;
+            border-bottom: 1px solid black;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: black;
+            font-size: 20px;
+        }
+        
+        .login input[type="submit"]
+        {
+            padding-top: 4px;
+            padding-left: 80px;
+            padding-right:80px;
+            padding-bottom: 4px;
+            font-size: 23px;
+            margin-top: 15px;
+            margin-left: 8px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="background">     
+            <div class="name">
+                <p>SPOTIFY</p>
+            </div>
+           
+            <div class="login">
+                <center><h1>Login Here</h1></center>
+                <form action="" method="post" name="login" enctype="multipart/form-data">
+                    <h3>User ID</h3>
+                    <input type="email" name="User Id" id="">
+                    
+                    <h3>Password</h3>
+                    <input type="password" name="password" id="">
+                    <br>
+                    <input type="submit" name="Login" id="">
+                    <br>
+                    <center><a href="#">Forgot Password?</a>
+                    <br>
+                    <a href="#">Don't have an account?</a></center>
+                </form>
+            </div>
+
+            <div class="img">
+                <img src="images/spotifyLOGO.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
