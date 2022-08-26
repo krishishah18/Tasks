@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Holidays</title>
+    <link rel="icon" href="img/liveholidays2.jpg">
+    <style>
+        
+        *
+        {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        #main
+        {
+            width: 100%;
+        }
+        .header
+        {
+            width: 100%;
+            height: 100px;
+            /* border: 2px solid; */
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .h-one
+        {
+            width: 300px;
+            height: 100px;
+            /* border: 2px solid; */
+            background-color: white;
+        }
+        .h-one img
+        {
+            height: 100px;
+            width: 300px;
+
+        }
+        .h-two
+        {
+            width: 1050px;
+            height: 100px;
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .h-two ul
+        {
+            margin-top: -20px;
+            padding: 0%;
+        }
+        .h-two li 
+        {
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 25px;
+            
+        }
+        .h-two a
+        {
+            text-decoration: none;
+            color: maroon;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .h-two a:hover
+        {
+            color: black;
+        }
+        .h-two img
+        {
+            margin-top: 10px;
+            padding: 0%;
+            border: 2px solid;
+        }
+        .dropdown 
+        {
+            display: none;
+            /* margin: 0%;
+            padding: 0%; */
+        }
+        .menu
+        {
+            display: inline-block;
+            background-color: aqua;
+        }
+        .menu:hover .dropdown
+        {
+            display: block;
+        }
+        .body
+        {
+            width: 100%;
+            height: 500px;
+            /* border: 2px solid; */
+            background-color: rgb(66, 109, 111);
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .b-left
+        {
+            width: 680px;
+            height: 500px;
+            /* border: 2px solid; */
+        }
+        .b-left img
+        {
+            height: 500px;
+            width: 680px;
+        }
+        .b-center
+        {
+            width: 6px;
+            height: 500px;
+            background-color: white;
+            /* border: 2px solid; */
+        }
+
+        .b-right
+        {
+            width: 680px;
+            height: 500px;
+            /* border: 2px solid; */
+              
+        }
+        .b-right img
+        {
+           height: 500px;
+           width: 680px;
+        }
+
+        .footer
+        {
+            width: 100%;
+            height: 55px;
+            /* border: 2px solid; */
+            background-color: white;
+        }
+        .footer p
+        {
+            text-align: center;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <div class="h-one"><center><img src="img/live1.jpg" alt=""></center></div>
+            
+            <div class="h-two">
+                <ul>
+                    <div class="menu">
+                    <li><a href="#">Home</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Best Offers</a></li>
+                                <li><a href="#">Popular Destination</a></li>
+                                <li><a href="#">Customer Reviews</a></li>
+                                <li><a href="#">Description</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Holidays</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><img src="img/icon1.jpg" alt="" height= "30px" ></a></li>
+                </ul>
+            </div>
+        </div>
+
+    
+        <div class="body">
+            <div class="b-left"><img src="img/Cheetahgarh.jpg" alt=""></div>
+            <div class="b-center"></div>
+            <div class="b-right"><img src="img/fateh.jpg" alt=""></div>
+        </div>
+        <div class="footer">
+            <p>Live Holidays | 8980426400 | info@liveholidays.co.in</p>
+        </div>
+    </div>
+</body>
+</html>

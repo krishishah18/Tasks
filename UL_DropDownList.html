@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            display: inline-block;
+        }
+        ul
+        {
+            padding: 0%;
+            margin: 0%;
+        }
+        .main li
+        {
+            background-color: blanchedalmond;
+            list-style-type: none;            
+        }
+        .main a
+        {
+            text-decoration: none;
+            color: black;
+            
+        }
+        .down
+        {
+            display: none;
+        }
+        .main:hover .down
+        {
+            display: block;
+        }
+        li:hover
+        {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drop Down Menu using UL LI</h1>
+    <div class="main">
+        <ul>
+            <li><a href="">Menu</a>
+                <div class="down">
+                    <ul>
+                        <li><a href="">list 1</a></li>
+                        <li><a href="">list 2</a></li>
+                        <li><a href="">list 3</a></li>
+                        <li><a href="">list 4</a></li>
+                        <li><a href="">list 5</a></li>
+                    </ul>
+            </li>
+        </div>
+    </div>      
+        
+</body>
+</html>
